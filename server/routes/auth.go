@@ -2,7 +2,7 @@ package routes
 
 import (
 	"housy/handlers"
-	"housy/pkg/middleware"
+	// "housy/pkg/middleware"
 	"housy/pkg/mysql"
 	"housy/repositories"
 
@@ -15,5 +15,5 @@ func AuthRoutes(r *mux.Router) {
 
 	r.HandleFunc("/sign-up", h.SignUp).Methods("POST")
 	r.HandleFunc("/sign-in", h.SignIn).Methods("POST")
-	r.HandleFunc("/check-auth", middleware.Auth(h.CheckAuth)).Methods("GET")
+	r.HandleFunc("/check-auth",h.CheckAuth).Methods("GET")
 }

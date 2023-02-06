@@ -1,5 +1,4 @@
 import Form from "react-bootstrap/Form";
-import { API } from "../config/api";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { useNavigate, useParams } from "react-router-dom";
@@ -9,9 +8,6 @@ import { useMutation } from "react-query";
 export default function MyBookingModal(props) {
   const { id } = useParams();
   const navigate = useNavigate();
-
-  const houseId = props.detail.id
-  console.log(houseId);
 
   const [checkIn, setCheckIn] = useState({
     check_in: "",
@@ -33,7 +29,6 @@ export default function MyBookingModal(props) {
       formData.append("check_out", checkIn.check_out);
 
       localStorage.setItem("check_in", JSON.stringify(checkIn));
-      localStorage.setItem("check_in", houseId);
       navigate(`/my-booking/${id}`);
 
       <alert variant="danger" className="py-1">

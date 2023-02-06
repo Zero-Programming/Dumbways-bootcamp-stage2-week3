@@ -3,7 +3,7 @@ import Col from "react-bootstrap/esm/Col";
 import "../styles/style.css";
 // import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import { API } from "../config/api";
 

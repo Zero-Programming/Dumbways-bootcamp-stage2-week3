@@ -19,26 +19,26 @@ func RepositoryUser(db *gorm.DB) *repository {
 
 func (r *repository) FindUsers() ([]models.User, error) {
 	var users []models.User
-	err := r.db.Preload("Profile").Find(&users).Error
+	err := r.db.Find(&users).Error
 
 	return users, err
 }
 
 func (r *repository) GetUser(ID int) (models.User, error) {
 	var user models.User
-	err := r.db.Preload("Profile").First(&user, ID).Error
+	err := r.db.First(&user, ID).Error
 
 	return user, err
 }
 
 func (r *repository) DeleteUser(user models.User) (models.User, error) {
-	err := r.db.Preload("Profile").Delete(&user).Error
+	err := r.db.Delete(&user).Error
 
 	return user, err
 }
 
 func (r *repository) UpdateUser(user models.User) (models.User, error) {
-	err := r.db.Preload("Profile").Save(&user).Error // Using Save method
+	err := r.db.Save(&user).Error // Using Save method
 
 	return user, err
 }
