@@ -1,0 +1,100 @@
+.bg {
+  background: rgba(196, 196, 196, 0.25);
+}
+
+.w100 {
+  width: 100% !important;
+}
+
+.jcb {
+  justify-content: space-between !important;
+}
+
+.bgContent {
+  background: #e5e5e5 !important;
+}
+
+.wbg {
+  width: 95% !important;
+}
+
+.wb {
+  width: 100px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs24 {
+  font-size: 20px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs10 {
+  font-size: 10px;
+}
+
+.warp {
+  flex-wrap: wrap !important;
+}
+
+.imgc {
+  height: 200px !important;
+  object-fit: cover !important;
+}
+
+.wc {
+  width: 350px;
+  height: 300px;
+  left: 0px;
+  top: 0px;
+  border-radius: 5px;
+}
+
+.si {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rs {
+  resize: none;
+}
+
+.bd {
+  border: none !important;
+}
+
+.pp {
+  margin: 100px 150px !important;
+  padding: 30px;
+}
+
+.myc {
+  width: 1035px !important;
+  left: 201px !important;
+  top: 193px !important;
+  border-radius: 5px !important;
+}
+
+.fmb {
+  display: flex !important;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bgad {
+  background-color: #b1b1b1;
+}
+.po {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.mt100 {
+  padding-top: 90px !important;
+}
